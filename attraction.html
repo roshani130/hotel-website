@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions & Things to Do</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #0E145E;
+        }
+
+        header {
+            background: #0E145E;
+        }
+
+        a {
+            text-decoration: none; /*this removes the underline of the link*/
+            color: white;
+        }
+
+        li {
+            list-style: none; /*this removes by default bullet points*/
+            display: inline-block;/*this is align the links*/
+        }
+
+        .flex_space {
+            display: flex; /*this is make list in another line*/
+            justify-content: space-between; /*justify content property display  the list to the corner*/
+        }
+
+        button {
+            border: none; /*this is for removing book now btn border*/
+            background: none; /*this is for removing by default background of the btn*/
+            transition: 0.5s;
+            cursor: pointer; /*this property is used for hands symbol cursor*/
+        }
+
+        .primary-btn { /*this for book now button and about us button*/
+            padding: 15px 40px; /* 1st is a top & bottom padding value and 2nd is a left & right padding values*/
+            background: #DAA520;
+            font-weight: bolder;
+            color: white;
+            display: inline-flex;
+        }
+
+        /*---------------header----------------*/
+        header {
+            height: 85px; 
+            line-height: 50px;/*this is for all header content line-height*/
+        }
+
+        header img {/*this is image size in home section*/
+            width: 200px;
+            height: 62px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        header ul {
+            display:inline-block; /*this is for inline the content*/
+            text-transform: uppercase;
+        }
+
+        header ul li a {/*this is for navlinks transition*/
+            transition: 0.5s;
+        }
+
+        header ul li a:hover{/*this hover property for navlinks*/
+            color: #D4AF37;
+            text-shadow: 0 0 5px rgba(212, 175, 55, 0.8);
+        }
+
+
+        h2{
+            color: #0E145E;
+            display: inline-flex;
+            font-size: large;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        h2:hover {
+            color: #DAA520;
+        }
+
+        .container {
+            width: 90%;
+            margin: 50px auto;
+            padding: 20px;
+            height: 100%;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .attraction {
+            margin: 100px 50px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            max-height: 500px;
+            height: 100%;
+        }
+
+        .attraction img {
+            width: 100%;
+            max-height: 400px;
+            height: 100%;
+            border-radius: 5px;
+        }
+        /*.attraction h3 {
+            margin-top: 10px;
+            color: #000;
+        }
+        .attraction p {
+            margin: 10px 0;
+            color: #555;
+            background-color: #fff;
+        }*/
+
+        .attraction img {
+            
+            margin: 50px auto;
+            width: 100%;
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        .attraction:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            transform: scale(1.02);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+ 
+        footer {
+            background:  linear-gradient(to right, #DAA520, #0E145E);
+            color: #fff;
+            height: 37px;
+            text-align: center;
+            padding-top: 16px;
+            position: relative;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+
+ 
+    </style>
+</head>
+<body>
+
+        <header>
+            <div class="content flex_space">
+                <div class="logo">
+                    <img src="images\logo-1.png">
+                </div>
+                <div class="navlinks">
+                    <ul id="menulist">
+                        <li style="margin: 12px; font-family: Georgia, 'Times New Roman', Times, serif;"><a href="index.html">home</a></li>
+                        <li style="margin: 12px; font-family: Georgia, 'Times New Roman', Times, serif;"><a href="about.html" >about</a></li>
+                        <li style="margin: 12px; font-family: Georgia, 'Times New Roman', Times, serif;"><a href="rooms.html" >rooms</a></li>
+                        <li style="margin: 12px; font-family: Georgia, 'Times New Roman', Times, serif;"><a href="services.html" >services</a></li>
+                        <li style="margin: 12px; font-family: Georgia, 'Times New Roman', Times, serif;"><a href="attraction.html" >attraction</a></li>
+                        <li style="margin: 12px; font-family: Georgia, 'Times New Roman', Times, serif;"><a href="contact.html" >contact</a></li>
+                        
+                        <li style="margin: 12px;"> <i style="color: #fff;" class="fa fa-search"></i></li>
+                        <li style="margin: 8px;"> <a href="book.html" ><button style="padding: 13px 17px; width: 150px; height: 45px; border-radius: 0; padding-left: 32px; padding-top: 15px;" class="primary-btn">BOOK NOW</button></a></li>
+                    </ul>
+                </div>
+            </div>
+            </header>
+
+
+            <h1 style="text-align: center; background-color: black; color: #fff; height: 50px; padding-top: 10px;">Discover Attractions Near Our Hotel</h1>
+    <div class="container">
+        <h1 style="text-align: center; ">Things to Do During Your Stay</h1>
+        
+        <div style="margin-top: 15px;" class="attraction">
+            <img src="https://ootytourism.co.in/images/tourist-places/ooty-lake/ooty-lake-tourism-opening-time-closing.jpg" alt="Scenic Lake">
+            <h3>Scenic Lake</h3>
+            <p>Enjoy breathtaking views and serene boat rides at the nearby lake, located just 15 minutes from the hotel.</p>
+        </div>
+        
+        <div class="attraction">
+            <img src="https://www.connectingtraveller.com/images/localtip/1632924069images.jpeg" alt="Historical Monument">
+            <h3>Historical Monument</h3>
+            <p>Explore the rich history and architecture of this iconic landmark, a short drive from the hotel.</p>
+        </div>
+        
+        <div class="attraction">
+            <img src="https://ibnbattutatravel.com/wp-content/uploads/listing-images/ibnbattuta-doE6pyq-PJpon-ZjG.jpg" alt="Shopping District">
+            <h3>Shopping District</h3>
+            <p>Indulge in retail therapy and local cuisine at the bustling shopping district, just 5 minutes away.</p>
+        </div>
+
+        <div class="attraction">
+            <img src="https://dreamlandmunnar.in/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-04-at-3.39.01-PM-1024x682.jpeg" alt="Adventure Park">
+            <h3>Adventure Park</h3>
+            <p>Perfect for families and thrill-seekers, the adventure park offers zip-lining, climbing, and more!</p>
+        </div>
+    </div>
+
+    <div style="margin-top: 30px; text-align: center;" class="social-icons">
+        <a style="color: black;" href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+        <a style="color: black;" href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        <a style="color: black;" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+    </div>
+    <footer>
+        &copy; 2025 The Luxe HEAVEN. All rights reserved.
+    </footer>
+</body>
+</html>
