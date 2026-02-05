@@ -168,7 +168,7 @@ header ul li a:hover{/*this hover property for navlinks*/
 /*--------------home--------------*/
 .grid {
     display: grid;
-    /*display: inline-flex;*/
+    display: inline-flex;
 }
 
 input {
@@ -371,6 +371,7 @@ footer {
   }
 
 }
+
 
 
 
