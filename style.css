@@ -1,13 +1,15 @@
+
 * {
-    padding: 0px;/*with padding we can add space we can set space bet content to box*/
-    margin: 5.5px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;/*this is for font of all body or links*/
 }
-@media(max-width: 768)
+@media(max-width: 768px)
 {
     body
     {
@@ -314,3 +316,4 @@ footer {
     width: 100%;
 
 }
+
