@@ -65,6 +65,7 @@ button {
 header {
     height: 69px; 
     line-height: 50px;/*this is for all header content line-height*/
+    padding: 10px 30px;
 }
 
 header img {/*this is image size in home section*/
@@ -75,6 +76,8 @@ header img {/*this is image size in home section*/
 header ul {
     display:inline-block; /*this is for inline the content*/
     text-transform: uppercase;
+    display: flex;
+    gap: 20px;
 }
 
 header ul li a {/*this is for navlinks transition*/
@@ -314,3 +317,4 @@ footer {
     position: relative;
     width: 100%;
 }
+
