@@ -64,37 +64,34 @@ button {
 
 /*---------------header----------------*/
 /* ---------- HEADER & NAVBAR (DESKTOP) ---------- */
+/*---------------header----------------*/
 
 header {
-  background: #fff;
-  height: 70px;
-  padding: 10px 30px;
-}
-
-header .flex_space {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    height: 69px; 
+    line-height: 50px;
+    padding: 10px 30px;
 }
 
 header img {
-  width: 180px;
+    width: 200px;
+    height: 62px;
 }
 
 header ul {
-  display: flex;
-  gap: 25px;
+    text-transform: uppercase;
+    display: flex;
+    gap: 20px;
 }
 
 header ul li a {
-  font-weight: 600;
-  transition: 0.3s;
+    transition: 0.5s;
 }
 
 header ul li a:hover {
-  color: #D4AF37;
-  text-shadow: 0 0 5px rgba(212, 175, 55, 0.8);
+    color: #D4AF37;
+    text-shadow: 0 0 5px rgba(212, 175, 55, 0.8);
 }
+
 
 .navlinks ul li a.active {
   color: #D4AF37;
@@ -462,6 +459,7 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
