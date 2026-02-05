@@ -319,3 +319,56 @@ footer {
 }
 
 
+/* ===== SAFE RESPONSIVE (WON'T CHANGE LAPTOP DESIGN) ===== */
+
+@media (max-width: 768px) {
+
+  .flex, .flex_space {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .home img {
+    height: auto;
+  }
+
+  .home .text {
+    position: static;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .home h1 {
+    font-size: 30px;
+  }
+
+  .home p {
+    font-size: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about .left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .reviews .grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
