@@ -514,7 +514,49 @@ footer {
   .book .grid {
     grid-template-columns: 1fr;
   }
+
+/* ===== BOOKING FORM ALIGN FIX ===== */
+
+.book .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
+
+.book .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.book input,
+.book select,
+.book button {
+  width: 100%;
+  height: 45px;
+  border-radius: 6px;
+}
+
+/* ===== MOBILE FIX ===== */
+
+@media (max-width: 768px) {
+  .book .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .book .grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+}
+
+}
+
 
 
 
