@@ -7,7 +7,13 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;/*this is for font of all body or links*/
 }
-
+@media(max-width: 768)
+{
+    body
+    {
+        font-size:14px;
+    }
+}
 a {
     text-decoration: none; /*this removes the underline of the link*/
     color: black;
@@ -306,4 +312,5 @@ footer {
     padding-top: 7px;
     position: relative;
     width: 100%;
+
 }
