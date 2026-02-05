@@ -355,21 +355,23 @@ footer {
 @media (max-width: 768px) {
 
   header {
-    height: auto;
-    padding: 15px;
+    padding: 12px;
   }
 
   header .flex_space {
     flex-direction: column;
   }
 
- header ul {
+  header ul {
     flex-direction: column;
     align-items: center;
-    gap: 14px;
-    padding-top: 10px;
-}
+    gap: 12px;
+    margin-top: 10px;
+  }
 
+  header img {
+    width: 150px;
+  }
 
   .home img {
     height: auto;
@@ -378,20 +380,15 @@ footer {
   .home .text {
     position: static;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
   }
 
   .home h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .home p {
-    font-size: 16px;
-  }
-
-  .flex, .flex_space {
-    flex-direction: column;
-    align-items: center;
+    font-size: 15px;
   }
 
   .about .left {
@@ -400,15 +397,13 @@ footer {
   }
 
   .right {
-    width: 100%;
-    height: auto;
-    margin: 0;
+    display: none;
   }
 
   .reviews .grid {
     grid-template-columns: 1fr;
   }
-
 }
+
 
 
