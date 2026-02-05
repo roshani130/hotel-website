@@ -460,7 +460,26 @@ footer {
   }
 }
 
+/* ===== BOOKING INPUT ALIGN FIX (SAFE) ===== */
 
+.book .grid {
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  gap: 15px;
+}
 
+.book input {
+  width: 100%;
+}
 
+.book button {
+  width: 100%;
+}
+
+/* Mobile safe fix */
+@media (max-width: 768px) {
+  .book .grid {
+    grid-template-columns: 1fr;
+  }
+}
 
