@@ -1,6 +1,6 @@
 * {
     padding: 0px;/*with padding we can add space we can set space bet content to box*/
-    margin: 5.5px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
@@ -13,6 +13,7 @@
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;/*this is for font of all body or links*/
+    overflow-x: hidden;
 }
 
 a {
@@ -25,6 +26,11 @@ a {
     font-weight: bold;
 }
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
 
 li {
     list-style: none; /*this removes by default bullet points*/
@@ -63,32 +69,58 @@ button {
 
 /*---------------header----------------*/
 header {
+  height: 70px;
+  padding: 10px 30px;
+}
+
+header .flex_space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  gap: 25px;
+}
+
+header ul li {
+  margin: 0;
+}
+
+header img {
+  width: 180px;
+  height: auto;
+}
+
+/*
+header {
     height: 69px; 
-    line-height: 50px;/*this is for all header content line-height*/
+    line-height: 50px;/*this is for all header content line-height
     padding: 10px 30px;
 }
 
-header img {/*this is image size in home section*/
+header img { /*this is image size in home section
     width: 200px;
     height: 62px;
 }
 
 header ul {
-    display:inline-block; /*this is for inline the content*/
+    display:inline-block; /*this is for inline the content
     text-transform: uppercase;
     display: flex;
     gap: 20px;
 }
 
-header ul li a {/*this is for navlinks transition*/
+header ul li a {/*this is for navlinks transition
     transition: 0.5s;
 }
 
-header ul li a:hover{/*this hover property for navlinks*/
+header ul li a:hover{  /*this hover property for navlinks
     color: #D4AF37;
     text-shadow: 0 0 5px rgba(212, 175, 55, 0.8);
 }
-
+*/
 /*-------------home--------------*/
 .home {
     height: 100vh; /*this is for home section text*/
@@ -316,5 +348,62 @@ footer {
     padding-top: 7px;
     position: relative;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+
+  header {
+    height: auto;
+    padding: 15px;
+  }
+
+  header .flex_space {
+    flex-direction: column;
+  }
+
+  header ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .home img {
+    height: auto;
+  }
+
+  .home .text {
+    position: static;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .home h1 {
+    font-size: 32px;
+  }
+
+  .home p {
+    font-size: 16px;
+  }
+
+  .flex, .flex_space {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .reviews .grid {
+    grid-template-columns: 1fr;
+  }
+
 }
 
