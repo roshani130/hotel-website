@@ -543,17 +543,168 @@ footer {
 
 /* ===== MOBILE FIX ===== */
 
+/* ================= GLOBAL MOBILE FIX ================= */
+
 @media (max-width: 768px) {
-  .book .container {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  h1 { font-size: 28px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 20px; }
+  p  { font-size: 15px; }
+
+  /* ---------- HEADER ---------- */
+
+  header {
+    height: auto;
+    padding: 15px;
+  }
+
+  header .flex_space {
     flex-direction: column;
+    gap: 12px;
+  }
+
+  header ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header img {
+    width: 140px;
+  }
+
+  /* ---------- HERO SECTION ---------- */
+
+  .home {
+    height: auto;
+  }
+
+  .home img {
+    height: auto;
+  }
+
+  .home .text {
+    position: static;
     text-align: center;
+    padding: 20px;
+  }
+
+  .home h1 {
+    font-size: 28px;
+  }
+
+  .home p {
+    font-size: 15px;
+  }
+
+  .home button {
+    margin: 8px;
+  }
+
+  /* ---------- BOOKING ---------- */
+
+  /*.book .container {
+    flex-direction: column;
+    align-items: center;
   }
 
   .book .grid {
     grid-template-columns: 1fr;
-    max-width: 100%;
+    width: 100%;
   }
+
+  .book input,
+  .book button {
+    width: 100%;
+  }*/
+.book {
+  background: #1a1a1a;
+  padding: 25px 0;
+  border-radius: 8px;
 }
+
+.book .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+
+.book input {
+  width: 100%;
+  height: 45px;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.book button {
+  width: 100%;
+  height: 45px;
+  border-radius: 6px;
+  background: #D4AF37;
+  color: white;
+  font-weight: bold;
+}
+
+
+  /* ---------- ABOUT ---------- */
+
+  .about .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .left {
+    width: 100%;
+  }
+
+  .right {
+    display: none;
+  }
+
+  /* ---------- REVIEWS ---------- */
+
+  .reviews {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .reviews .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .box {
+    margin-left: 0;
+  }
+
+  /* ---------- GALLERY ---------- */
+
+  .gallery .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ---------- FOOTER ---------- */
+
+  footer {
+    height: auto;
+    padding: 10px;
+  }
+
+}
+
 
 }
 
@@ -644,6 +795,7 @@ footer {
   }
 
 }
+
 
 
 
