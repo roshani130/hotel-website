@@ -9,7 +9,7 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;/*this is for font of all body or links*/
 }
-@media(max-width: 992px)
+/*@media(max-width: 992px)*/
 @media(max-width: 768px)
 {
     body
@@ -168,7 +168,7 @@ header ul li a:hover{/*this hover property for navlinks*/
 /*--------------home--------------*/
 .grid {
     display: grid;
-    display: inline-flex;
+    /*display: inline-flex;*/
 }
 
 input {
@@ -371,4 +371,5 @@ footer {
   }
 
 }
+
 
