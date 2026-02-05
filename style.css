@@ -81,8 +81,10 @@ header .flex_space {
 
 header ul {
   display: flex;
-  gap: 25px;
+  gap: 20px;
+  align-items: center;
 }
+
 
 header ul li {
   margin: 0;
@@ -147,11 +149,11 @@ header ul li a:hover{  /*this hover property for navlinks
     font-weight: 550;
 }
 
-.home {
+/*.home {
     background-color: #F7E7CE;
-}
+}*/
 
-.homme h1, .home p {
+.home h1, .home p {
     color: #0E145E;
 }
 
@@ -361,11 +363,13 @@ footer {
     flex-direction: column;
   }
 
-  header ul {
+ header ul {
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-  }
+    gap: 14px;
+    padding-top: 10px;
+}
+
 
   .home img {
     height: auto;
@@ -406,4 +410,5 @@ footer {
   }
 
 }
+
 
