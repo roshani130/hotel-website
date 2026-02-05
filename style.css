@@ -9,6 +9,7 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;/*this is for font of all body or links*/
 }
+@media(max-width: 992px)
 @media(max-width: 768px)
 {
     body
@@ -316,4 +317,5 @@ footer {
     width: 100%;
 
 }
+
 
