@@ -469,22 +469,29 @@ footer {
   align-items: center;
 }
 
-.book input,
-.book .check-availibity {
-  width: 100%;
-  height: 45px;
-  padding: 8px 10px;
-  border-radius: 6px;
-  font-size: 14px;
+.book .form {
+    width: 100%;
+}
+
+.book input {
+    width: 100%;
+    height: 45px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
 }
 
 .book .check-availibity {
-  background: #D4AF37;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
+    height: 45px;
+    width: 100%;
+    background: #D4AF37;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
 }
+
 
 @media (max-width: 768px) {
   .book .grid {
@@ -508,5 +515,6 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 
 
